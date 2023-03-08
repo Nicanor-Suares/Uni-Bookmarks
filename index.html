@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="./script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="icon.png" href="images/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+  <title>Uni Bookmarks</title>
+</head>
+<body>
+
+  <div class="appVue">
+  <header>
+    <h1>Uni Bookmarks</h1>
+      <form action="" v-on:submit.prevent="agregarBookmark">
+				<div class="new-bookmark-header" id="new-bookmark-header">
+					<input v-model="newBookmark" type="text" id="new-bookmark" placeholder="Añadir Bookmark">
+					<button class="btn-add">Añadir</button>
+				</div>
+			</form>
+    </header>
+
+    <section>
+      <h2>Listado</h2>
+      <div class="bookmarks">
+        <a href="" class="btn-bookmark">Desarrollo en entornos .NET</a>
+        <a href="" class="btn-bookmark">Desarrollo de apps móviles</a>
+        <a href="" class="btn-bookmark">Inglés Técnico 2</a>
+        <a href="" class="btn-bookmark">Admin. de Bases de Datos</a>
+        <a href="" class="btn-bookmark">Ingeniería de Software</a>
+        <a href="" class="btn-bookmark">Inglés Técnico 1</a>
+        <a href="" class="btn-bookmark">Laboratorio 2</a>
+        <a href="" class="btn-bookmark">Matemática 1</a>
+        <a href="" class="btn-bookmark">Desarrollo Web 2</a>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
